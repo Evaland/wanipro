@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+<!-- タイトル表示 -->
+{% block title %}入力の表示{% endblock %}
+
+<!-- コンテンツ内容の表示 -->
+{% block content %}
+<!-- ステージ１ -->
+{% if times == "381" %}
+<meta http-equiv="refresh" content=" 381; url=./index2">
+<!-- ステージ２ -->
+{% elif times == "377" %}
+<meta http-equiv="refresh" content=" 377; url=./index3">
+{% elif times == "62a" %}
+<meta http-equiv="refresh" content=" 62; url=./index2">
+<!-- ステージ３ -->
+{% elif times == "596" %}
+<meta http-equiv="refresh" content=" 596; url=./index4">
+{% elif times == "332" %}
+<meta http-equiv="refresh" content=" 332; url=./index5">
+{% elif times == "62b" %}
+<meta http-equiv="refresh" content=" 62; url=./index3">
+<!-- ステージ4 -->
+{% elif times == "277" %}
+<meta http-equiv="refresh" content=" 277; url=./index">
+{% elif times == "62c" %}
+<meta http-equiv="refresh" content=" 62; url=./index5">
+
+{% endif %}
+<article class="post">
+    <header>
+      <div>
+        <video src={{ url }} autoplay></video>
+      </div>
+    </header>
+  </article>
+{% endblock %}

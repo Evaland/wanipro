@@ -1,0 +1,23 @@
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='static/styles.css')}}">
+</head>
+
+<body>
+<div class="f-container">
+<form action="/" method="POST">
+    <div class="f-item">
+        <p class="p-blue-left">
+        <input type="radio" name="item" value="7" checked="checked">3回目の話し合いの途中だわに
+        </p>
+        </div>
+        
+        <div class="f-item">
+            <p class="p-blue"><input type="submit" value="クリック！ だわに"></p>
+        </div>
+</form>
+</div>
+{% endblock %}

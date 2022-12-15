@@ -1,0 +1,33 @@
+
+{% block content %}
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='static/styles.css')}}">
+    </head>
+    
+    <body>
+    <div class="f-container">
+    <div class="f-item">
+        <img src="videoes/static/images/logo.png" alt="小田切プロジェクトロゴ">
+    </div>
+    <div class="f-item">
+    <form action="/" method="POST">
+        <p class="p-blue">
+            <input type="radio" name="item" value="1" checked="checked">ここからスタート だわに
+        </p>
+    </div>
+    <div class="f-item">
+        <p class="send">
+            <input type="submit" value="スタート">
+        </p>
+    </div>
+    <div class="f-item picturesize">
+        <img src="videoes/static/images/wani.png" alt="ファシリゲーター">
+    </div>
+    </form>
+    </div>
+    </body>
+{% endblock %}
